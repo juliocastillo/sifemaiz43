@@ -11,11 +11,11 @@ class UserController extends AbstractController
     /** 
      * @Route("/index", name="app_homepage")
      */
-    public function login()
+    public function index()
     {
         $number = random_int(0, 100);
 
-        return $this->render('user/login.html.twig', [
+        return $this->render('index.html.twig', [
             'number' => $number,
         ]);
     }
